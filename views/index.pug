@@ -1,0 +1,131 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  script(src='https://kit.fontawesome.com/f928c52a29.js' crossorigin='anonymous')
+  title educatonal website
+  link(rel='stylesheet' href='../static/style1.css')
+  link(href='https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Kanit&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap' rel='stylesheet')
+  script(src='index.js')
+nav#navbar
+  ul
+    li.item
+      a(href='/' style='background-color:white ; color:black;border-radius:20px;') Home
+    li.item
+      a(href='#about') About
+    li.item
+      a(href='#courses') Courses 
+    li.item
+      a(href='#events') Events
+    li.item
+      a(href='/contact') Contact
+section#home
+  marquee(behavior='slide' direction='up')
+    h1 AN INVESTMENT IN KNOWLEDGE
+    h1 PAYS THE BEST INTEREST
+  button.btn
+    a(href='/contact')    Apply Now  
+section#home1
+  #services
+    .box
+      i.fa-solid.fa-book-open(style='font-size:50px;padding-left: 80px;padding-bottom:20px;margin-top:-100px;')
+      h2.h-secondary.center Scholorship News
+      p.center
+        | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit et, quo rem totam voluptatum veritatis architecto fuga voluptatem illo blanditiis, quod molestiae facilis! Reprehenderit dicta repudiandae quisquam iure. Eveniet consequuntur hic quibusdam laudantium doloremque!
+    .box
+      i.fa-sharp.fa-solid.fa-chalkboard-user(style='font-size:50px;padding-left: 80px;padding-bottom:20px;margin-top:-100px;')
+      h2.h-secondary.center Our Notice Board
+      p.center
+        | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit et, quo rem totam voluptatum veritatis architecto fuga voluptatem illo blanditiis, quod molestiae facilis! Reprehenderit dicta repudiandae quisquam iure. Eveniet consequuntur hic quibusdam laudantium doloremque!
+    .box
+      i.fa-sharp.fa-solid.fa-star(style='font-size:50px;padding-left: 80px;padding-bottom:20px;margin-top:-100px;')
+      h2.h-secondary.center Our Achievements 
+      p.center
+        | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit et, quo rem totam voluptatum veritatis architecto fuga voluptatem illo blanditiis, quod molestiae facilis! Reprehenderit dicta repudiandae quisquam iure. Eveniet consequuntur hic quibusdam laudantium doloremque!
+section#about
+  .about-section
+    h1 About Educenter
+    p
+      | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, magnam. Rem, id vero! Reiciendis soluta non distinctio asperiores fugiat voluptatum. Ad, veritatis nihil consequuntur totam voluptatem, atque dolore cum perferendis dicta earum aut velit vitae officiis labore hic dignissimos dolor modi! Doloremque est ad cum adipisci minima laudantium, ipsam molestias?
+    br
+    p
+      | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error esse officiis neque sed ea dolore illum a blanditiis commodi molestiae.
+    button.btn1
+      a(href='') Learn More
+  img(src='../static/about-us.jpg' alt='')
+section#courses
+  h1 Our Courses
+  #courses-section
+    .box-1
+      img(src='../static/course-1.jpg' alt='')
+      h2 Photography
+      p
+        | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus sapiente autem nulla doloribus animi maxime aliquid quae totam cum quia.
+      button.btn2
+        a(href='/contact') Apply Now
+    .box-1
+      img(src='../static/course-2.jpg' alt='')
+      h2 Programing
+      p
+        | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus sapiente autem nulla doloribus animi maxime aliquid quae totam cum quia.
+      button.btn2
+        a(href='/contact') Apply Now
+    .box-1
+      img(src='../static/course-3.jpg' alt='')
+      h2 Freelancing
+      p
+        | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus sapiente autem nulla doloribus animi maxime aliquid quae totam cum quia.
+      button.btn2
+        a(href='/contact') Apply Now
+  #courses-section1
+    .box-1
+      img(src='../static/course-6.jpg' alt='')
+      h2 Art Design
+      p
+        | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus sapiente autem nulla doloribus animi maxime aliquid quae totam cum quia.
+      button.btn2
+        a(href='/contact') Apply Now
+    .box-1
+      img(src='../static/course-5.jpg' alt='')
+      h2 Branding Design
+      p
+        | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus sapiente autem nulla doloribus animi maxime aliquid quae totam cum quia.
+      button.btn2
+        a(href='/contact') Apply Now
+    .box-1
+      img(src='../static/course-4.jpg' alt='')
+      h2 Lifestyle Archives
+      p
+        | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus sapiente autem nulla doloribus animi maxime aliquid quae totam cum quia.
+      button.btn2
+        a(href='/contact') Apply Now
+  button.btn3
+    a(href='') See All
+section#workshop
+  .workshop-section
+    h3 Click to Join the Workshop
+    h1 Training In Deep Learning
+  button.btn4
+    a(href='/contact') Join Now
+section#events
+  h1 Upcoming Events
+  #events-section
+    .box-2
+      img(src='../static/event-1.jpg' alt='')
+      h2 18 December
+      p Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    .box-2
+      img(src='../static/event-2.jpg' alt='')
+      h2 20 December
+      p Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    .box-2
+      img(src='../static/event-3.jpg' alt='')
+      h2 22 December
+      p Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+footer#bottem
+  hr
+  p Copyright &copy; 2022, All rights reserved
+hr

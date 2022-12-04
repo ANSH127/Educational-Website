@@ -1,0 +1,42 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Contact Page
+  link(rel='stylesheet' href='../static/style1.css')
+  script(src='../static/index.js')
+nav#navbar
+  ul
+    li.item
+      a(href='/') Home
+    li.item
+      a(href='#about' onclick='javascript:timeFunction1()') About
+    li.item
+      a(href='#courses' onclick='javascript:timeFunction1()') Courses 
+    li.item
+      a(href='#events' onclick='javascript:timeFunction1()') Events
+    li.item
+      a(href='/contact' style='background-color:white ; color:black;border-radius:20px;') Contact
+section#contact
+  .heading
+    h1 Home
+    h2 &gt; Contact Us
+  .con
+    h1 Contact Us
+    form.form-page(action='/con' method="post")
+      input(type='text' placeholder='Enter Your Name' name="name1")
+      input(type='email' placeholder='Enter Your Email' name="email")
+      input(type='text' placeholder='Enter Your Subject' name="subject")
+      textarea(id='' cols='30' rows='10' placeholder='Your Messages' name="text")
+      input#btn-1(type='submit' value='Send Message')
+      footer#bottem1
+        hr
+        p Copyright &copy; 2022, All rights reserved
+      hr
+//
+  <footer id="bottem">
+  <hr>
+  <p>Copyright &copy; 2022, All rights reserved</p>
+  </footer>
+  <hr>

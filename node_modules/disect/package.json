@@ -1,0 +1,30 @@
+{
+  "name": "disect",
+  "version": "1.1.1",
+  "description": "Bisection helper for javascript",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "nodeunit": "~0.8.1"
+  },
+  "scripts": {
+    "test": "nodeunit test/test-*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Floby/node-disect"
+  },
+  "keywords": [
+    "bisect",
+    "bisection",
+    "async"
+  ],
+  "author": "Florent Jaby <florent.jaby@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Floby/node-disect/issues"
+  }
+}

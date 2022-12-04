@@ -1,0 +1,447 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --navbar-height:59px;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+    padding:8px;
+    /* margin:0px 10px ; */
+}
+#navbar{
+    /* background-color: black; */
+    
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar li{
+    padding:20px 25px;
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 3px 22px;
+    font-family: cursive;
+    
+}
+
+#navbar li a:hover{
+    
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:.4;
+    
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    align-items: center;
+     justify-content: center; 
+    height: 480px;
+}
+#home::before{
+    content: "";
+    background:url('pexels-buro-millennial-1438081.jpg') no-repeat center center/cover;
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:.59;
+    top: 0;
+    left: 0;
+    
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2px;
+    font-weight: bold;
+    font-size: 40px;
+    
+}
+.btn{
+    padding: 11px 15px;
+    border: 2px solid  rgb(247, 112, 22);
+    background-color: rgb(247, 112, 22);
+    color: white ;
+    font-weight: bold;
+    margin: 17px;
+    font-size: 1rem;
+    /* border-radius: 20px; */
+    cursor: pointer;
+}
+
+.btn a:hover,.btn:hover{
+    background-color: white;
+    color:  rgb(247, 112, 22);
+    transition: .2s ease;
+}
+#home1{
+    /* margin: -50px; */
+    background-color:whitesmoke;
+    width: 100vw;
+}
+#services{
+    padding-top: 10px;
+    margin: 23px;
+    display: flex;
+    margin-top:-30px;
+
+}
+#services .box{
+    /* border: 2px solid brown; */
+    /* border: 2px solid brown; */
+    padding: 63px 10px;
+    margin: 3px 20px;
+    border-radius: 20px;
+    /* background-color: #ead6d633; */
+
+}
+#services .box p{
+    font-weight: 400;
+    color: #5c5c77;
+    font-size: 15px;
+    line-height: 1.9;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.h-secondary{
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+#about{
+    height: 500px;
+}
+#about h1{
+    font-size: 50px;
+    padding:40px 60px;
+}
+#about img{
+     width: 600px;
+    height: 400px; 
+    margin-left: 600px;
+    margin-top: -320px;
+    
+}
+.about-section{
+    display: inline-block;
+    /* border: 2px solid red; */
+    width:45%;
+    height:400px;
+}
+
+.about-section p{
+    font-weight: 400;
+    color: #5c5c77;
+    font-size: 15px;
+    line-height: 1.9;
+    font-family: "Poppins", sans-serif;
+    padding-left: 60px;
+}
+.btn1{
+    position: absolute;
+    padding: 11px 15px;
+    border: 1px solid  rgb(247, 112, 22);
+    background-color:white;
+    color:rgb(247, 112, 22) ;
+    /* font-weight: bold; */
+    /* margin-top: -10000px; */
+    margin: 20px 60px;
+    /* margin-right: 400px; */
+    font-size: 1.2rem;
+    /* border-radius: 20px; */
+    cursor: pointer;
+}
+.btn1:hover{
+    border-top:4px solid rgb(247, 112, 22);
+    border-bottom:4px solid rgb(247, 112, 22);
+    transition: .2s ease-in-out;
+}
+.btn1 a{
+    text-decoration: none;
+    color:rgb(247, 112, 22) ;
+}
+#courses{
+    height: 1450px;
+}
+#courses h1{
+    font-size: 50px;
+    padding:40px 68px;
+}
+
+
+
+.box-1{
+    border: 2px solid white;
+    width: 25%;
+    height: 550px;
+    padding:0px 30px;
+    margin: 0px 15px;
+    transition:all 1s ease-in-out 1s;
+
+
+}
+.box-1:hover{
+    /* box shadow offest-x offset-y blur radius color */
+
+    box-shadow: 5px 7px 30px 5px rgb(243, 240, 216);
+    /* width: 26%; */
+    /* height: 552px; */
+    /* border-radius: 20px; */
+    /* width: 356px; */
+    border: 2px solid rgb(223, 133, 60);
+
+
+
+}
+
+#courses-section{
+    display: flex;
+    /* padding:10px 20px; */
+    padding-left: 60px;
+}
+.box-1 img{
+    margin: 0px -30px;
+    width: 360px;
+    height: 308px;
+}
+#courses-section p{
+    font-weight: 400;
+    color: #5c5c77;
+    font-size: 15px;
+    line-height: 1.9;
+    font-family: "Poppins", sans-serif;
+    /* padding-left: 60px; */
+}
+
+.box-1 h2{
+    font-weight:2000;
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.box-1 h2:hover{
+    color: rgb(247, 112, 22);
+    font-weight: bold;
+    /* font-size: 50px;
+    padding:40px 68px; */
+}
+
+.btn2{
+    /* position: absolute; */
+    padding: 11px 15px;
+    border: 1px solid  rgb(247, 112, 22);
+    background-color:white;
+    color:rgb(247, 112, 22) ;
+    /* font-weight: bold; */
+    /* margin-top: -10000px; */
+    margin: 6px;
+    /* margin-right: 400px; */
+    font-size: 1rem;
+    /* border-radius: 20px; */
+    cursor: pointer;
+}
+.btn2:hover{
+    border-top:4px solid rgb(247, 112, 22);
+    border-bottom:4px solid rgb(247, 112, 22);
+    transition: .2s ease-in-out;
+}
+.btn2 a{
+    text-decoration: none;
+    color:rgb(247, 112, 22) ;
+}
+
+#courses-section1{
+    display: flex;
+    /* padding:10px 20px; */
+    padding-left: 60px;
+    padding-top: 50px;
+}
+#courses-section1 p{
+    font-weight: 400;
+    color: #5c5c77;
+    font-size: 15px;
+    line-height: 1.9;
+    font-family: "Poppins", sans-serif;
+    /* padding-left: 60px; */
+}
+.btn3{
+    
+    padding: 10px 36px;
+    border: 1px solid  rgb(247, 112, 22);
+    background-color:white;
+    color:rgb(247, 112, 22) ;
+    
+    margin: 20px 570px;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+.btn3:hover{
+    border-top:4px solid rgb(247, 112, 22);
+    border-bottom:4px solid rgb(247, 112, 22);
+    transition: .2s ease-in-out;
+}
+.btn3 a{
+    text-decoration: none;
+    color:rgb(247, 112, 22) ;
+}
+
+
+#workshop{
+    margin:-15px;
+    height: 300px;
+    background-color:rgb(243 240 216);
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.workshop-section h3{
+    text-align: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin:40px; */
+    padding:80px;
+
+}
+.workshop-section h1{
+    text-align: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin:-55px;
+    padding-bottom:70px;
+    font-size: 45px;
+
+}
+.btn4{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    padding: 15px 40px;
+    border-radius: 0;
+    font-weight:bold;
+    border: 0;
+    position: relative;
+    z-index: 1;
+    transition: .2s ease;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 10px 560px;
+    
+
+}
+.btn4:hover{
+    border-top:4px solid rgb(247, 112, 22);
+    border-bottom:4px solid rgb(247, 112, 22);
+    transition: .2s ease-in-out;
+}
+.btn4 a{
+    text-decoration: none;
+    color:rgb(247, 112, 22) ;
+}
+#events h1{
+    font-size: 45px;
+    padding:40px 68px;
+}
+
+
+#events-section{
+    display: flex;
+    /* padding:10px 20px; */
+    padding-left: 60px;
+}
+#events-section p{
+    font-weight: bold;
+    
+    font-size: 25px;
+    padding-top: 2px;
+    margin-left: -18px;
+    /* line-height: 1.9; */
+    /* font-family: cursive; */
+    /* padding-left: 60px; */
+}
+
+.box-2{
+    border: 2px solid white;
+    width: 25%;
+    height: 430px;
+    padding:0px 30px;
+    margin: 0px 15px;
+    transition:all 1s ease-in-out 1s;
+
+
+}
+.box-2:hover{
+    /* box shadow offest-x offset-y blur radius color */
+
+    box-shadow: 5px 7px 30px 5px rgb(243, 240, 216);
+    /* width: 26%; */
+    /* height: 552px; */
+    /* border-radius: 20px; */
+    /* width: 356px; */
+    border: 2px solid rgb(223, 133, 60);
+
+
+
+}
+.box-2 img{
+    margin: 0px -30px;
+    width: 360px;
+    height: 308px;
+}
+
+
+.box-2 h2{
+    font-weight:lighter;
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+    margin-left: -20px;
+    /* text-decoration: underline; */
+
+    padding-bottom: 0px;
+    cursor: pointer;
+}
+#bottem{
+    height: 50px;
+    background-color: antiquewhite;
+    margin-top: 50px;
+}
+#bottem p{
+    text-align: center;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    margin-top: 8px;
+}
