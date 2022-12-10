@@ -2,7 +2,9 @@
     padding: 0;
     margin: 0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 :root{
     --navbar-height:59px;
 }
@@ -105,11 +107,8 @@
     color:  rgb(247, 112, 22);
     transition: .2s ease;
 }
-#home1{
-    /* margin: -50px; */
-    background-color:whitesmoke;
-    /* width: 100vw; */
-}
+
+
 #services{
     padding-top: 10px;
     margin: 23px;
@@ -134,26 +133,17 @@
     font-family: "Poppins", sans-serif;
 }
 
-
-.h-secondary{
-    color: black;
-    font-weight: bold;
-    font-size: 30px;
-    padding-bottom: 20px;
-}
 #about{
-    height: 500px;
+    /* height: 500px; */
+    display: flex;
 }
 #about h1{
     font-size: 50px;
     padding:40px 60px;
 }
 #about img{
-     width: 600px;
-    height: 400px; 
-    margin-left: 600px;
-    margin-top: -320px;
-    
+     width: auto;
+    height: auto; 
 }
 .about-section{
     display: inline-block;
@@ -178,7 +168,7 @@
     color:rgb(247, 112, 22) ;
     /* font-weight: bold; */
     /* margin-top: -10000px; */
-    margin: 20px 60px;
+    margin: 490px 60px;
     /* margin-right: 400px; */
     font-size: 1.2rem;
     /* border-radius: 20px; */
@@ -197,9 +187,8 @@
 
 
 
-#courses{
-    height: 1450px;
-}
+
+
 #courses h1{
     font-size: 50px;
     padding:40px 68px;
@@ -209,7 +198,7 @@
 
 .box-1{
     border: 2px solid white;
-    width: 25%;
+    width:300px;
     height: 550px;
     padding:0px 30px;
     margin: 0px 15px;
@@ -231,6 +220,8 @@
 
 }
 
+
+
 #courses-section{
     display: flex;
     /* padding:10px 20px; */
@@ -246,6 +237,8 @@
     color: #5c5c77;
     font-size: 15px;
     line-height: 1.9;
+    /* align-items: center;
+    text-align: center; */
     font-family: "Poppins", sans-serif;
     /* padding-left: 60px; */
 }
@@ -265,6 +258,22 @@
     padding:40px 68px; */
 }
 
+
+
+#courses-section1{
+    display: flex;
+    /* padding:10px 20px; */
+    padding-left: 60px;
+    padding-top: 50px;
+}
+#courses-section1 p{
+    font-weight: 400;
+    color: #5c5c77;
+    font-size: 15px;
+    line-height: 1.9;
+    font-family: "Poppins", sans-serif;
+    /* padding-left: 60px; */
+}
 .btn2{
     /* position: absolute; */
     padding: 11px 15px;
@@ -289,30 +298,14 @@
     color:rgb(247, 112, 22) ;
 }
 
-
-
-#courses-section1{
-    display: flex;
-    /* padding:10px 20px; */
-    padding-left: 60px;
-    padding-top: 50px;
-}
-#courses-section1 p{
-    font-weight: 400;
-    color: #5c5c77;
-    font-size: 15px;
-    line-height: 1.9;
-    font-family: "Poppins", sans-serif;
-    /* padding-left: 60px; */
-}
 .btn3{
-    
+    display: grid;
     padding: 10px 36px;
     border: 1px solid  rgb(247, 112, 22);
     background-color:white;
     color:rgb(247, 112, 22) ;
     
-    margin: 20px 570px;
+    margin: 20px auto;
     font-size: 1.2rem;
     cursor: pointer;
 
@@ -327,12 +320,14 @@
     color:rgb(247, 112, 22) ;
 }
 
+
 #workshop{
-    margin:-15px;
+    margin-top: 50px;
+    /* margin:-15px; */
     height: 300px;
     background-color:rgb(243 240 216);
     font-family: 'IBM Plex Mono', monospace;
-    width: 1278px;
+    /* width: 1278px; */
 }
 
 .workshop-section h3{
@@ -355,7 +350,9 @@
 
 }
 
+
 .btn4{
+    display: grid;
     font-size: 16px;
     font-family: "Poppins", sans-serif;
     text-transform: capitalize;
@@ -368,7 +365,7 @@
     transition: .2s ease;
     overflow: hidden;
     white-space: nowrap;
-    margin: 10px 560px;
+    margin: auto auto;
     
 
 }
@@ -381,6 +378,7 @@
     text-decoration: none;
     color:rgb(247, 112, 22) ;
 }
+
 
 
 #events h1{
@@ -407,7 +405,7 @@
 
 .box-2{
     border: 2px solid white;
-    width: 25%;
+    width: 300px;
     height: 430px;
     padding:0px 30px;
     margin: 0px 15px;
@@ -447,6 +445,7 @@
 }
 #bottem{
     height: 50px;
+    /* width: 100%; */
     background-color: antiquewhite;
     margin-top: 50px;
 }

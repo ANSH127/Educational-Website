@@ -6,6 +6,7 @@ head
   script(src='https://kit.fontawesome.com/f928c52a29.js' crossorigin='anonymous')
   title educatonal website
   link(rel='stylesheet' href='../static/style1.css')
+  link(rel='stylesheet' media='screen and (max-width:1170px)' href='../static/phone.css')
   link(href='https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap' rel='stylesheet')
   link(href='https://fonts.googleapis.com/css2?family=Kanit&display=swap' rel='stylesheet')
   link(href='https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap' rel='stylesheet')
@@ -13,7 +14,7 @@ head
 nav#navbar
   ul
     li.item
-      a(href='/' style='background-color:white ; color:black;border-radius:20px;') Home
+      a(href='index1.html' style='background-color:white ; color:black;border-radius:20px;') Home
     li.item
       a(href='#about') About
     li.item
@@ -21,27 +22,27 @@ nav#navbar
     li.item
       a(href='#events') Events
     li.item
-      a(href='/contact') Contact
+      a(href='contact.html') Contact
 section#home
   marquee(behavior='slide' direction='up')
     h1 AN INVESTMENT IN KNOWLEDGE
     h1 PAYS THE BEST INTEREST
   button.btn
-    a(href='/contact')    Apply Now  
+    a(href='contact.html')    Apply Now  
 section#home1
   #services
     .box
-      i.fa-solid.fa-book-open(style='font-size:50px;padding-left: 80px;padding-bottom:20px;margin-top:-100px;')
+      i.fa-solid.fa-book-open(style='font-size:50px;padding-left: 80px;padding-bottom:20px;')
       h2.h-secondary.center Scholorship News
       p.center
         | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit et, quo rem totam voluptatum veritatis architecto fuga voluptatem illo blanditiis, quod molestiae facilis! Reprehenderit dicta repudiandae quisquam iure. Eveniet consequuntur hic quibusdam laudantium doloremque!
     .box
-      i.fa-sharp.fa-solid.fa-chalkboard-user(style='font-size:50px;padding-left: 80px;padding-bottom:20px;margin-top:-100px;')
+      i.fa-sharp.fa-solid.fa-chalkboard-user(style='font-size:50px;padding-left: 80px;padding-bottom:20px;')
       h2.h-secondary.center Our Notice Board
       p.center
         | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit et, quo rem totam voluptatum veritatis architecto fuga voluptatem illo blanditiis, quod molestiae facilis! Reprehenderit dicta repudiandae quisquam iure. Eveniet consequuntur hic quibusdam laudantium doloremque!
     .box
-      i.fa-sharp.fa-solid.fa-star(style='font-size:50px;padding-left: 80px;padding-bottom:20px;margin-top:-100px;')
+      i.fa-sharp.fa-solid.fa-star(style='font-size:50px;padding-left: 80px;padding-bottom:20px;')
       h2.h-secondary.center Our Achievements 
       p.center
         | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit et, quo rem totam voluptatum veritatis architecto fuga voluptatem illo blanditiis, quod molestiae facilis! Reprehenderit dicta repudiandae quisquam iure. Eveniet consequuntur hic quibusdam laudantium doloremque!
@@ -49,13 +50,10 @@ section#about
   .about-section
     h1 About Educenter
     p
-      | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, magnam. Rem, id vero! Reiciendis soluta non distinctio asperiores fugiat voluptatum. Ad, veritatis nihil consequuntur totam voluptatem, atque dolore cum perferendis dicta earum aut velit vitae officiis labore hic dignissimos dolor modi! Doloremque est ad cum adipisci minima laudantium, ipsam molestias?
-    br
-    p
-      | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error esse officiis neque sed ea dolore illum a blanditiis commodi molestiae.
-    button.btn1
-      a(href='') Learn More
+      | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, magnam. Rem, id vero! Reiciendis soluta non distinctio asperiores fugiat voluptatum. Ad, veritatis nihil consequuntur totam voluptatem, atque dolore cum perferendis dicta earum aut velit vitae officiis labore hic dignissimos dolor modi! Doloremque est ad cum adipisci minima laudantium, ipsam molestias? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores modi quasi similique accusamus vero, magni soluta itaque eum ut temporibus.
   img(src='../static/about-us.jpg' alt='')
+  button.btn1
+    a(href='') Learn More
 section#courses
   h1 Our Courses
   #courses-section
@@ -65,21 +63,21 @@ section#courses
       p
         | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus sapiente autem nulla doloribus animi maxime aliquid quae totam cum quia.
       button.btn2
-        a(href='/contact') Apply Now
+        a(href='contact.html') Apply Now
     .box-1
       img(src='../static/course-2.jpg' alt='')
       h2 Programing
       p
         | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus sapiente autem nulla doloribus animi maxime aliquid quae totam cum quia.
       button.btn2
-        a(href='/contact') Apply Now
+        a(href='contact.html') Apply Now
     .box-1
       img(src='../static/course-3.jpg' alt='')
       h2 Freelancing
       p
         | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus sapiente autem nulla doloribus animi maxime aliquid quae totam cum quia.
       button.btn2
-        a(href='/contact') Apply Now
+        a(href='contact.html') Apply Now
   #courses-section1
     .box-1
       img(src='../static/course-6.jpg' alt='')
@@ -87,21 +85,21 @@ section#courses
       p
         | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus sapiente autem nulla doloribus animi maxime aliquid quae totam cum quia.
       button.btn2
-        a(href='/contact') Apply Now
+        a(href='contact.html') Apply Now
     .box-1
       img(src='../static/course-5.jpg' alt='')
       h2 Branding Design
       p
         | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus sapiente autem nulla doloribus animi maxime aliquid quae totam cum quia.
       button.btn2
-        a(href='/contact') Apply Now
+        a(href='contact.html') Apply Now
     .box-1
       img(src='../static/course-4.jpg' alt='')
       h2 Lifestyle Archives
       p
         | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus sapiente autem nulla doloribus animi maxime aliquid quae totam cum quia.
       button.btn2
-        a(href='/contact') Apply Now
+        a(href='contact.html') Apply Now
   button.btn3
     a(href='') See All
 section#workshop
@@ -109,7 +107,7 @@ section#workshop
     h3 Click to Join the Workshop
     h1 Training In Deep Learning
   button.btn4
-    a(href='/contact') Join Now
+    a(href='contact.html') Join Now
 section#events
   h1 Upcoming Events
   #events-section
