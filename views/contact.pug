@@ -25,11 +25,11 @@ section#contact
     h2 &gt; Contact Us
   .con
     h1 Contact Us
-    form.form-page(action='')
-      input(type='text' placeholder='Enter Your Name')
-      input(type='email' placeholder='Enter Your Email')
-      input(type='text' placeholder='Enter Your Subject')
-      textarea(name='' id='' cols='30' rows='10' placeholder='Your Messages')
+    form.form-page(action='con' method='post')
+      input(type='text' placeholder='Enter Your Name' name='name1')
+      input(type='email' placeholder='Enter Your Email' name='email')
+      input(type='text' placeholder='Enter Your Subject' name='subject')
+      textarea(name='text' id='' cols='30' rows='10' placeholder='Your Messages')
       input#btn-1(type='submit' value='Send Message')
       footer#bottem1
         hr
