@@ -10,11 +10,11 @@ head
   link(href='https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap' rel='stylesheet')
   link(href='https://fonts.googleapis.com/css2?family=Kanit&display=swap' rel='stylesheet')
   link(href='https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap' rel='stylesheet')
-  script(src='index.js')
+  script(src='../static/index.js')
 nav#navbar
   ul
     li.item
-      a(href='index1.html' style='background-color:white ; color:black;border-radius:20px;') Home
+      a(href='/' style='background-color:white ; color:black;border-radius:20px;') Home
     li.item
       a(href='#about') About
     li.item
@@ -22,13 +22,13 @@ nav#navbar
     li.item
       a(href='#events') Events
     li.item
-      a(href='contact.html') Contact
+      a(href='/contact') Contact
 section#home
   marquee(behavior='slide' direction='up')
     h1 AN INVESTMENT IN KNOWLEDGE
     h1 PAYS THE BEST INTEREST
   button.btn
-    a(href='contact.html')    Apply Now  
+    a(href='/contact')    Apply Now  
 section#home1
   #services
     .box
@@ -59,47 +59,64 @@ section#courses
   #courses-section
     .box-1
       img(src='../static/course-1.jpg' alt='')
+      .overlay
+        .text
+          button.btn2
+            a(href='/contact') Apply Now
       h2 Photography
       p
         | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus sapiente autem nulla doloribus animi maxime aliquid quae totam cum quia.
-      button.btn2
-        a(href='contact.html') Apply Now
     .box-1
       img(src='../static/course-2.jpg' alt='')
+      .overlay
+        .text
+          button.btn2
+            a(href='/contact') Apply Now
       h2 Programing
       p
         | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus sapiente autem nulla doloribus animi maxime aliquid quae totam cum quia.
-      button.btn2
-        a(href='contact.html') Apply Now
+      // <button class="btn2"><a href="/contact">Apply Now</a> </button>
     .box-1
       img(src='../static/course-3.jpg' alt='')
+      .overlay
+        .text
+          button.btn2
+            a(href='/contact') Apply Now
       h2 Freelancing
       p
         | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus sapiente autem nulla doloribus animi maxime aliquid quae totam cum quia.
-      button.btn2
-        a(href='contact.html') Apply Now
+      // <button class="btn2"><a href="/contact">Apply Now</a> </button>
   #courses-section1
     .box-1
       img(src='../static/course-6.jpg' alt='')
+      .overlay
+        .text
+          button.btn2
+            a(href='/contact') Apply Now
       h2 Art Design
       p
         | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus sapiente autem nulla doloribus animi maxime aliquid quae totam cum quia.
-      button.btn2
-        a(href='contact.html') Apply Now
+      // <button class="btn2"><a href="/contact">Apply Now</a> </button>
     .box-1
       img(src='../static/course-5.jpg' alt='')
+      .overlay
+        .text
+          button.btn2
+            a(href='/contact') Apply Now
       h2 Branding Design
       p
         | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus sapiente autem nulla doloribus animi maxime aliquid quae totam cum quia.
-      button.btn2
-        a(href='contact.html') Apply Now
+      // <button class="btn2"><a href="/contact">Apply Now</a> </button>
     .box-1
       img(src='../static/course-4.jpg' alt='')
+      .overlay
+        .text
+          button.btn2
+            a(href='/contact') Apply Now
       h2 Lifestyle Archives
       p
         | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus sapiente autem nulla doloribus animi maxime aliquid quae totam cum quia.
-      button.btn2
-        a(href='contact.html') Apply Now
+      // <button class="btn2"><a href="/contact">Apply Now</a> </button>
   button.btn3
     a(href='') See All
 section#workshop
@@ -107,7 +124,7 @@ section#workshop
     h3 Click to Join the Workshop
     h1 Training In Deep Learning
   button.btn4
-    a(href='contact.html') Join Now
+    a(href='/contact') Join Now
 section#events
   h1 Upcoming Events
   #events-section

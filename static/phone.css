@@ -122,3 +122,27 @@
 }
 
 
+.heading::before{
+    height: 300px;
+}
+.heading h1{
+    font-size: 30px;
+}
+.heading h2{
+    font-size: 20px;
+}
+.con h1{
+    font-size: 25px;
+}
+.form-page input,.form-page textarea{
+    width: 90%;
+    margin-left: 15px;
+    font-size: 15px;
+    padding:8px;
+}
+#btn-1{
+    display: grid;
+    margin: auto;
+    width: 90%;
+    margin-top: 30px;
+}

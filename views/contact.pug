@@ -5,6 +5,7 @@ head
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
   title Contact Page
   link(rel='stylesheet' href='../static/style1.css')
+  link(rel='stylesheet' media='screen and (max-width:1170px)' href='../static/phone.css')
   script(src='../static/index.js')
 nav#navbar
   ul
@@ -17,18 +18,18 @@ nav#navbar
     li.item
       a(href='#events' onclick='javascript:timeFunction1()') Events
     li.item
-      a(href='/contact' style='background-color:white ; color:black;border-radius:20px;') Contact
+      a(href='contact.html' style='background-color:white ; color:black;border-radius:20px;') Contact
 section#contact
   .heading
     h1 Home
     h2 &gt; Contact Us
   .con
     h1 Contact Us
-    form.form-page(action='/con' method="post")
-      input(type='text' placeholder='Enter Your Name' name="name1")
-      input(type='email' placeholder='Enter Your Email' name="email")
-      input(type='text' placeholder='Enter Your Subject' name="subject")
-      textarea(id='' cols='30' rows='10' placeholder='Your Messages' name="text")
+    form.form-page(action='')
+      input(type='text' placeholder='Enter Your Name')
+      input(type='email' placeholder='Enter Your Email')
+      input(type='text' placeholder='Enter Your Subject')
+      textarea(name='' id='' cols='30' rows='10' placeholder='Your Messages')
       input#btn-1(type='submit' value='Send Message')
       footer#bottem1
         hr

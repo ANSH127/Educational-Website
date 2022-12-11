@@ -197,6 +197,7 @@ html{
 
 
 .box-1{
+    position: relative;
     border: 2px solid white;
     width:300px;
     height: 550px;
@@ -277,8 +278,8 @@ html{
 .btn2{
     /* position: absolute; */
     padding: 11px 15px;
-    border: 1px solid  rgb(247, 112, 22);
-    background-color:white;
+    border: 1px solid red;
+    background-color:black;
     color:rgb(247, 112, 22) ;
     /* font-weight: bold; */
     /* margin-top: -10000px; */
@@ -289,13 +290,17 @@ html{
     cursor: pointer;
 }
 .btn2:hover{
-    border-top:4px solid rgb(247, 112, 22);
-    border-bottom:4px solid rgb(247, 112, 22);
+    border-top:4px solid white;
+    border-bottom:4px solid white;
     transition: .2s ease-in-out;
+    
 }
 .btn2 a{
     text-decoration: none;
-    color:rgb(247, 112, 22) ;
+    color:white ;
+}
+.btn2 a:hover{
+    color: red;
 }
 
 .btn3{
@@ -457,37 +462,43 @@ html{
     font-family: 'Kanit', sans-serif;
     margin-top: 8px;
 }
-/* }
-.block:hover{
-    position: relative;
-    display: inline-block;
-}
-.displayNew{
-    display: none;
-}
-.dropdown-content {
-    display: none;
+
+.overlay {
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color:#242321;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    opacity:0;
   }
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+  
+  .box-1:hover .overlay {
+    bottom: 0;
+    height: 100%;
+    opacity: 0.8;
   }
-.dropdown-content a:hover {background-color: #ddd;}
+  
+  .text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    /* font-weight: bold; */
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
 
-.dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;} */
-
-#contact{
+  /* #contact{
     height: 1200px;
-}
+} */
 
 .heading h1{
     font-size: 40px;
@@ -508,6 +519,22 @@ html{
     /* background-color: #22bac1; */
     height: 300px;
 }
+
+.heading::before{
+    content: "";
+    background:url('pexels-visual-tag-mx-2566581.jpg') no-repeat center center/cover;
+    position: absolute;
+    height:55%;
+    width:100%;
+    z-index:-1;
+    opacity:.3;
+    top: 0;
+    left: 0;
+    
+}
+
+
+
 .con h1{
     font-size: 40px;
     margin-top: 40px;
@@ -542,18 +569,6 @@ html{
     background-color: cornsilk;
 }
 
-.heading::before{
-    content: "";
-    background:url('pexels-visual-tag-mx-2566581.jpg') no-repeat center center/cover;
-    position: absolute;
-    height:65%;
-    width:100%;
-    z-index:-1;
-    opacity:.3;
-    top: 0;
-    left: 0;
-    
-}
 #bottem1{
     height: 50px;
     background-color: antiquewhite;
